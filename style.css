@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+header .logo {
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  header .logo {
+    font-size: 2rem;
+  }
+}
+
+header .logo span {
+  color: #ff0157;
+}
+
+.buttons {
+  margin-top: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons a {
+  margin-left: 12px;
+}
+
+.menu__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.menu__box {
+  background-color: white;
+  width: 340px;
+  margin: 20px;
+  border: 12px solid white;
+}
+
+.menu__imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.menu__imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.t__text {
+  text-align: center;
+}
+
+.t__text p {
+  color: #666;
+  font-style: italic;
+  font-weight: 300px;
+}
+
+.t__text h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 14px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+}
+
+footer h2 {
+  color: black;
+}
